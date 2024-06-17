@@ -54,9 +54,10 @@ class StudentsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Students $students)
+    public function show(Students $student)
     {
-        //
+        $data_student = $student;
+        return view('students.show',compact('data_student'));
     }
 
     /**
